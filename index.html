@@ -12,94 +12,138 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
+
+
+    <!-- owl theme -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <!-- owl theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
-<body>
-    <header>
-        <div class="nav-parent">
-            <nav class="navbar navbar-expand-lg bg-dark fixed-top">
-                <div class="container">
-
-                    <a class="navbar-brand text-white  fs-3" href="#">DevFolio</a>
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-                            <li class="nav-item px-2">
-                                <a class="nav-link active text-white position-relative" aria-current="page"
-                                    href="#">Home</a>
-                            </li>
-                            <li class="nav-item px-2">
-                                <a class="nav-link text-white position-relative" href="#">about</a>
-                            </li>
-                            <li class="nav-item px-2">
-                                <a class="nav-link text-white position-relative" href="#">services</a>
-                            </li>
-                            <li class="nav-item px-2">
-                                <a class="nav-link text-white position-relative" href="#">work</a>
-                            </li>
-                            <li class="nav-item px-2">
-                                <a class="nav-link text-white position-relative" href="#">blog</a>
-                            </li>
-                            <li class="nav-item dropdown position-relative px-2">
-                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
-                                </a>
-                                <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">dropdown 1</a></li>
-                                    <li class="position-relative">
-                                        <a class=" dropdown-item nav-link-hover" href="#">deep dropdown
-                                            <i class="fa-solid fa-angle-right"></i> </a>
-                                        <ul
-                                            class="top-0 dropdown-submenu position-absolute list-unstyled w-100 bg-white border border-grey rounded-2 text-decoration-none py-2 ">
-                                            <li><a href="#" class="text-dark dropdow-item">dropdown 1</a></li>
-                                            <li><a href="#" class="text-dark">dropdown 2</a></li>
-                                            <li><a href="#" class="text-dark">dropdown 3</a></li>
-                                            <li><a href="#" class="text-dark">dropdown 4</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">dropdown 2</a></li>
-                                    <li><a class="dropdown-item" href="#">dropdown 3</a></li>
-                                    <li><a class="dropdown-item" href="#">dropdown 4</a></li>
-
-                                </ul>
-                            </li>
-                            <li class="nav-item position-relative px-2">
-                                <a class="nav-link text-white" href="#">contact</a>
-                            </li>
+<body data-bs-spy="scroll" data-bs-target="#mainnav">
+    <header id="home">
 
 
-                        </ul>
+        <nav class="navbar navbar-expand-lg bg-dark fixed-top" id="mainnav">
+            <div class="container">
 
-                    </div>
+                <a class="navbar-brand fs-3 text-light" href="#">DevFolio</a>
 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars fs-2 text-light"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item p-2  active position-relative">
+                            <a class="nav-link  text-white " aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item p-2 position-relative">
+                            <a class="nav-link text-white " href="#about">about</a>
+                        </li>
+                        <li class="nav-item p-2 position-relative">
+                            <a class="nav-link text-white" href="#services">services</a>
+                        </li>
+                        <li class="nav-item p-2 position-relative">
+                            <a class="nav-link text-white" href="#work">work</a>
+                        </li>
+                        <li class="nav-item p-2 position-relative">
+                            <a class="nav-link text-white" href="#blog">blog</a>
+                        </li>
+                        <li class="nav-item dropdown-abdo position-relative p-2">
+                            <a class="nav-link  text-white" href="#">Dropdown <i class="fa-solid fa-angle-down"></i></a>
+
+
+                            <ul class="shadow dropdown-main position-absolute py-2   bg-light list-unstyled top-100">
+                                <li><a href="#" class="w-100 text-decoration-none py-2 px-4 text-dark">drop down
+                                        1 </a>
+                                </li>
+                                <li class="position-relative toggle-li"><a href="#"
+                                        class=" w-100 text-decoration-none py-2 px-4 text-dark">deep
+                                        dropdown <i class="fa-solid fa-chevron-right"></i></a>
+                                    <ul
+                                        class="shadow dropdown-secondry position-absolute right-100 top-0 py-2  bg-light list-unstyled">
+                                        </ulclass>
+
+                                        <li><a class="w-100 text-decoration-none py-2 px-4 text-dark" href="#">deep
+                                                dropdown 1
+                                            </a>
+                                        </li>
+                                        <li><a class="w-100 text-decoration-none py-2 px-4 text-dark" href="#">deep
+                                                dropdown
+                                                2</a>
+                                        </li>
+                                        <li><a class="w-100 text-decoration-none py-2 px-4 text-dark" href="#">deep
+                                                dropdown
+                                                3</a>
+                                        </li>
+                                        <li><a class="w-100 text-decoration-none py-2 px-4 text-dark" href="#"> deep
+                                                dropdown
+                                                4</a>
+                                        </li>
+                                        <li><a class="w-100 text-decoration-none py-2 px-4 text-dark" href="#">deep
+                                                dropdown
+                                                5</a>
+                                        </li>
+                                        <li><a class="w-100 text-decoration-none py-2 px-4 text-dark" href="#">deep
+                                                dropdown
+                                                6</a>
+                                        </li>
+                                    </ul>
+
+                                </li>
+                                <li><a href="#" class="w-100 text-decoration-none py-2 px-4 text-dark">drop down
+                                        3</a>
+                                <li><a href="#" class="w-100 text-decoration-none py-2 px-4 text-dark">drop down
+                                        4</a>
+                                </li>
+
+
+                        </li>
+                        <li><a href="#" class="w-100 text-decoration-none py-2 px-4 text-dark">drop down 4</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item position-relative p-2">
+                        <a class="nav-link text-white" href="#contact">contact</a>
+                    </li>
+
+
+                    </ul>
 
                 </div>
-            </nav>
-        </div>
+
+            </div>
+        </nav>
+
 
         <div class="home d-flex align-items-center justify-content-center">
             <div class="container text-center">
-                <h1 class="text-white fs-1 mb-2">iam morgan freeman</h1>
-                <p class="text-white fs-3">photographer designer youtuber</p>
+                <h1 class="text-white h1 mb-2">iam morgan freeman</h1>
+                <!-- <p class="text-white fs-3 typing-animation"></p> -->
+                <span class="text-white fs-1  typing-animation"></span>
             </div>
         </div>
 
     </header>
     <main>
-        <section class="about min-vh-100 py-5" id="about">
-            <div class="container">
+        <section class="about min-vh-100 py-5 bg-light px-3" id="about">
+            <div class="container shadow p-4 p-sm-3 p-md-4 pd-lg-4 bg-white">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <div class="row">
-                            <div class="col-4"><img src="./Assests/img/testimonial-2.jpg" class="rounded-2" alt="">
+                            <div class="col-lg-4 col-sm-12"><img src="./Assests/img/testimonial-2.jpg" class="rounded-2"
+                                    alt="">
                             </div>
-                            <div class="col-8">
+                            <div class="col-12 my-4  col-lg-8 ">
                                 <ul class="list-unstyled">
                                     <li class="mb-3"><b>name:</b> Morgan Freeman</li>
                                     <li class="mb-3"><b>profile:</b> full stack developer</li>
@@ -137,7 +181,7 @@
 
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <div class="about-me-parent">
                             <div class="common-title my-3">
                                 <h2>about me</h2>
@@ -187,9 +231,9 @@
 
                     </div>
                 </div>
-                <div class="row mt-5">
-                    <div class="col-lg-4 ">
-                        <div class=" card text-center p-4 rounded-8 border-0 py-5">
+                <div class="row mt-5 g-5">
+                    <div class="col-md-4 ">
+                        <div class=" card text-center p-4 rounded-8 border-0 py-5 shadow-lg">
                             <div class="card-icon "><span
                                     class="m-auto d-flex align-items-center justify-content-center  rounded-circle p-54"><i
                                         class="fa-solid fa-briefcase"></i></span></div>
@@ -205,8 +249,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 ">
-                        <div class=" card text-center p-4 rounded-8 border-0 py-5">
+                    <div class="col-md-4">
+                        <div class=" card text-center p-4 rounded-8 border-0 py-5 shadow-lg">
                             <div class="card-icon "><span
                                     class="m-auto d-flex align-items-center justify-content-center  rounded-circle p-54"><i
                                         class="fa-solid fa-briefcase"></i></span></div>
@@ -222,8 +266,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 ">
-                        <div class=" card text-center p-4 rounded-8 border-0 py-5">
+                    <div class="col-md-4">
+                        <div class=" card text-center p-4 rounded-8 border-0 py-5 shadow-lg">
                             <div class="card-icon "><span
                                     class="m-auto d-flex align-items-center justify-content-center  rounded-circle p-54"><i
                                         class="fa-solid fa-briefcase"></i></span></div>
@@ -239,8 +283,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 ">
-                        <div class=" card text-center p-4 rounded-8 border-0 py-5">
+                    <div class="col-md-4">
+                        <div class=" card text-center p-4 rounded-8 border-0 py-5 shadow-lg">
                             <div class="card-icon "><span
                                     class="m-auto d-flex align-items-center justify-content-center  rounded-circle p-54"><i
                                         class="fa-solid fa-briefcase"></i></span></div>
@@ -256,8 +300,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 ">
-                        <div class=" card text-center p-4 rounded-8 border-0 py-5">
+                    <div class="col-md-4">
+                        <div class=" card text-center p-4 rounded-8 border-0 py-5 shadow-lg">
                             <div class="card-icon "><span
                                     class="m-auto d-flex align-items-center justify-content-center  rounded-circle p-54"><i
                                         class="fa-solid fa-briefcase"></i></span></div>
@@ -273,8 +317,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 ">
-                        <div class=" card text-center p-4 rounded-8 border-0 py-5">
+                    <div class="col-md-4">
+                        <div class=" card text-center p-4 rounded-8 border-0 py-5 shadow-lg">
                             <div class="card-icon "><span
                                     class="m-auto d-flex align-items-center justify-content-center  rounded-circle p-54"><i
                                         class="fa-solid fa-briefcase"></i></span></div>
@@ -296,7 +340,7 @@
         <section class="work min-vh-60 py-5" id="work">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-md-3">
                         <div class="card  text-center py-3 border-0 ">
                             <div class="card-icon "><span
                                     class=" border-white m-auto d-flex align-items-center justify-content-center  rounded-circle p-54"><i
@@ -308,7 +352,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-md-3">
                         <div class="card  text-center py-3 border-0 ">
                             <div class="card-icon "><span
                                     class=" border-white m-auto d-flex align-items-center justify-content-center  rounded-circle p-54"><i
@@ -320,7 +364,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-md-3">
                         <div class="card  text-center py-3 border-0 ">
                             <div class="card-icon "><span
                                     class=" border-white m-auto d-flex align-items-center justify-content-center  rounded-circle p-54"><i
@@ -332,7 +376,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-md-3">
                         <div class="card  text-center py-3 border-0 ">
                             <div class="card-icon "><span
                                     class=" border-white m-auto d-flex align-items-center justify-content-center  rounded-circle p-54"><i
@@ -367,14 +411,14 @@
 
                     </div>
                 </div>
-                <div class="portfolio-work">
+                <div class="portfolio-work my-5 g-3">
                     <div class="row">
-                        <div class="col-lg-4 shadow">
-                            <a href="#">
-                                <div class="portofolio-img"><img class="w-100" src="./Assests/img/work-1.jpg" alt="">
+                        <div class="col-md-4 my-4 shadow">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="display-inline">
+                                <div class="portofolio-img w-100"><img class="w-100" src="./Assests/img/work-1.jpg"
+                                        alt="">
                                 </div>
                             </a>
-
                             <div class="portofolio-description">
                                 <div class="row py-4 px-2 d-flex align-items-center justify-content-between">
                                     <div class="col-lg-8">
@@ -392,13 +436,33 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div
+                                    class="modal-dialog modal-dialog-centered d-flex justify-content-center align-items-center">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <img class="w-100" src="./Assests/img/work-1.jpg" alt="">
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-4 shadow">
-                            <a href="#">
-                                <div class="portofolio-img"><img class="w-100" src="./Assests/img/work-1.jpg" alt="">
+                        <div class="col-md-4 my-4 shadow">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="display-inline">
+                                <div class="portofolio-img w-100"><img class="w-100" src="./Assests/img/work-1.jpg"
+                                        alt="">
                                 </div>
                             </a>
-
                             <div class="portofolio-description">
                                 <div class="row py-4 px-2 d-flex align-items-center justify-content-between">
                                     <div class="col-lg-8">
@@ -416,13 +480,33 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div
+                                    class="modal-dialog modal-dialog-centered d-flex justify-content-center align-items-center">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <img class="w-100" src="./Assests/img/work-1.jpg" alt="">
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-4 shadow">
-                            <a href="#">
-                                <div class="portofolio-img"><img class="w-100" src="./Assests/img/work-1.jpg" alt="">
+                        <div class="col-md-4 my-4 shadow">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="display-inline">
+                                <div class="portofolio-img w-100"><img class="w-100" src="./Assests/img/work-1.jpg"
+                                        alt="">
                                 </div>
                             </a>
-
                             <div class="portofolio-description">
                                 <div class="row py-4 px-2 d-flex align-items-center justify-content-between">
                                     <div class="col-lg-8">
@@ -440,13 +524,33 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div
+                                    class="modal-dialog modal-dialog-centered d-flex justify-content-center align-items-center">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <img class="w-100" src="./Assests/img/work-1.jpg" alt="">
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-4 shadow">
-                            <a href="#">
-                                <div class="portofolio-img"><img class="w-100" src="./Assests/img/work-1.jpg" alt="">
+                        <div class="col-md-4 my-4 shadow">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="display-inline">
+                                <div class="portofolio-img w-100"><img class="w-100" src="./Assests/img/work-1.jpg"
+                                        alt="">
                                 </div>
                             </a>
-
                             <div class="portofolio-description">
                                 <div class="row py-4 px-2 d-flex align-items-center justify-content-between">
                                     <div class="col-lg-8">
@@ -464,13 +568,33 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div
+                                    class="modal-dialog modal-dialog-centered d-flex justify-content-center align-items-center">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <img class="w-100" src="./Assests/img/work-1.jpg" alt="">
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-4 shadow">
-                            <a href="#">
-                                <div class="portofolio-img"><img class="w-100" src="./Assests/img/work-1.jpg" alt="">
+                        <div class="col-md-4 my-4 shadow">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="display-inline">
+                                <div class="portofolio-img w-100"><img class="w-100" src="./Assests/img/work-1.jpg"
+                                        alt="">
                                 </div>
                             </a>
-
                             <div class="portofolio-description">
                                 <div class="row py-4 px-2 d-flex align-items-center justify-content-between">
                                     <div class="col-lg-8">
@@ -488,13 +612,33 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div
+                                    class="modal-dialog modal-dialog-centered d-flex justify-content-center align-items-center">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <img class="w-100" src="./Assests/img/work-1.jpg" alt="">
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-4 shadow">
-                            <a href="#">
-                                <div class="portofolio-img"><img class="w-100" src="./Assests/img/work-1.jpg" alt="">
+                        <div class="col-md-4 my-4 shadow">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="display-inline">
+                                <div class="portofolio-img w-100"><img class="w-100" src="./Assests/img/work-1.jpg"
+                                        alt="">
                                 </div>
                             </a>
-
                             <div class="portofolio-description">
                                 <div class="row py-4 px-2 d-flex align-items-center justify-content-between">
                                     <div class="col-lg-8">
@@ -512,50 +656,72 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div
+                                    class="modal-dialog modal-dialog-centered d-flex justify-content-center align-items-center">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <img class="w-100" src="./Assests/img/work-1.jpg" alt="">
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
+
+
                     </div>
+
                 </div>
+            </div>
             </div>
         </section>
         <section class="people min-vh-100 py-5 d-flex align-items-center justify-content-center">
             <div class="container">
 
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
 
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="10000">
-                            <div class="profile text-center text-white">
-                                <img src="./Assests/img/testimonial-2.jpg" alt="" class="rounded-pill">
-                                <h3 class="my-3">marta socrate</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, libero.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="2000">
-                            <div class="profile text-center text-white">
-                                <img src="./Assests/img/testimonial-2.jpg" alt="" class="rounded-pill">
-                                <h3 class="my-3">marta socrate</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, asperiores.</p>
-                            </div>
-                        </div>
+
+                <div class="owl-carousel owl-theme">
+                    <div class="profile w-25 m-auto text-center text-white item">
+                        <img src="./Assests/img/testimonial-2.jpg" alt="" class="rounded-pill">
+                        <h3 class="my-3">xavi alonso</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, libero.</p>
                     </div>
 
+
+                    <div class="profile w-25 m-auto text-center text-white item">
+                        <img src="./Assests/img/testimonial-4.jpg" alt="" class="rounded-pill">
+                        <h3 class="my-3">marta socrate</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, asperiores.</p>
+                    </div>
                 </div>
+
+
+
+
+
+
+            </div>
 
 
 
             </div>
         </section>
-        <section class="blog min-vh-100 py-5 ">
+        <section class="blog  py-5 " id="blog">
             <div class="container">
                 <div class="common-top text-center position-relative">
                     <div class="common-h2 ">
-                        <h2>services</h2>
+                        <h2>blog</h2>
                     </div>
 
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -567,7 +733,7 @@
                 </div>
 
                 <div class="row blog-parent my-5">
-                    <div class="col-4">
+                    <div class="col-12 col-md-4">
                         <div class="card text-start rounded-3">
                             <div class="card-img "><img class="card-img-top rounded-3" src="./Assests/img/post-1.jpg"
                                     alt="Title">
@@ -603,7 +769,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-md-4">
                         <div class="card text-start rounded-3">
                             <div class="card-img "><img class="card-img-top rounded-3" src="./Assests/img/post-1.jpg"
                                     alt="Title">
@@ -639,7 +805,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-md-4">
                         <div class="card text-start rounded-3">
                             <div class="card-img "><img class="card-img-top rounded-3" src="./Assests/img/post-1.jpg"
                                     alt="Title">
@@ -682,10 +848,10 @@
         </section>
         <section class="contact min-vh-100 position-relative d-flex align-items-center justify-content-center"
             id="contact">
-            <div class="overlay position-absolute top-0 bottom-0 "></div>
+            <!-- <div class="overlay position-absolute top-0 bottom-0 "></div> -->
             <div class="container">
-                <div class="row bg-light p-5">
-                    <div class="col-6">
+                <div class="row bg-light p-2 py-4 p-lg-5">
+                    <div class="col-12 col-lg-6">
                         <div class="common-title my-3">
                             <h2>Send Message Us
                             </h2>
@@ -702,7 +868,7 @@
                         </form>
 
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6">
                         <div class="common-title my-3">
                             <h2>Get in Touch
                             </h2>
@@ -766,6 +932,18 @@
     </footer>
     <script src="./Assests/js/all.min.js"></script>
     <script src="./Assests/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- owl cuersour library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./Assests/js/script.js"></script>
 </body>
 
